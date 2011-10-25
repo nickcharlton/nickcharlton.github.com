@@ -1,0 +1,255 @@
+/*
+	This is Jacks. A library to help you start (responsive) web projects.
+	
+	This is where you should start your project. The page id is set to approximately a typical 960px grid. And, it's centred. The margin on #page breaks the usual theory, but, it works.
+	
+	The Jacks presets are assuming that line-height, margin and padding are appropriate based upon the page size. You might find you disagree. Lucky that it cascades, then, right?
+*/
+/* Eric Meyer's CSS Reset. http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+/*
+	This is Jacks. A library to help you start (responsive) web projects.
+	
+	Certain mixins come from Elements, by Dmitry Fadeyev. You should check them out, there are many more: http://lesselements.com/
+*/
+/* Mixins */
+/* Typography Presets */
+body {
+  font: normal 100% Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  /* line-height is relative to the font-size, it appears. */
+
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Garamond, Hoefler Text, Times New Roman, Times, serif;
+  line-height: 1.5em;
+  /* line-height is relative to the font-size, it appears. */
+
+  margin: 1.6666667%;
+  /* 16px /  960px */
+
+  font-weight: bold;
+}
+h1 {
+  font-size: 3em;
+  /* 48px / 16px */
+
+}
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px */
+
+}
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px */
+
+}
+h4 {
+  font-size: 1em;
+  /* 16px / 16px */
+
+}
+pre, code {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+}
+p {
+  font-size: 1em;
+  /* 16px / 16px */
+
+  line-height: 1.25em;
+  margin: 1.6666667%;
+  /* 16px /  960px */
+
+}
+em, i {
+  font-style: italic;
+}
+strong, b {
+  font-weight: bold;
+}
+small {
+  font-size: 0.75em;
+  /* 14px / 16px */
+
+}
+ul {
+  list-style-type: disc;
+  margin: 3.125% 6.25% 3.125% 6.25%;
+  /* Left/Right: 60px Top/Bottom: 30px /  960px */
+
+}
+ol {
+  list-style-type: decimal;
+  margin: 3.125% 6.25% 3.125% 6.25%;
+  /* Left/Right: 60px Top/Bottom: 30px /  960px */
+
+}
+li {
+  margin: 0.5208333% 0 0.5208333% 0;
+  /* 5px / 960px */
+
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+hr {
+  color: #000000;
+  background: #000000;
+  border: 0;
+  height: 1px;
+  margin: 1.0416667% 0 1.0416667% 0;
+  /* 10px / 960px */
+
+}
+::selection {
+  background: #e6e9eb;
+}
+::-moz-selection {
+  background: #e6e9eb;
+}
+#page {
+  margin: 3.75% auto;
+  /* 36px / 960px */
+
+  width: 50%;
+  background-color: #8DC1E2;
+  padding: 2.0833333%;
+  /* 20px / 960px */
+
+}
+header {
+  text-align: center;
+  padding: 0 3.75% 0 3.75%;
+}
+header h1 {
+  font-size: 2.625em;
+  /* 42px / 16px */
+
+}
+/* Media Queries */
+/* Tablets (Landscape) */
+@media screen and (max-width: 1024px) {
+  #page {
+    width: 60%;
+  }
+}
+/* Tablets (Portrait) */
+@media screen and (max-width: 768px) {
+  
+}
+/* Smartphones */
+@media screen and (max-width: 520px) {
+  #page {
+    width: 100%;
+  }
+}
+/* For very large screens. */
+@media screen and (min-width: 1200px) {
+  #page {
+    width: 960px;
+  }
+}
